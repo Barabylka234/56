@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Фильмы</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <style>
+        .header {
+            background: #000;
+            padding: 15px 0;
+        }
+
+        .main-block {
+            background: #fff;
+            padding: 30px;
+        }
+
+        .movie-card {
+            margin-bottom: 40px;
+        }
+
+        .movie-card h2 {
+            font-weight: bold;
+        }
+
+        .trailer-link {
+            color: #007bff;   
+            text-decoration: none;
+        }
+
+        .trailer-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+
+
+<div class="header">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-4">
+                <img src="logo.png" class="logo" width="120">
+            </div>
+            <div class="col-md-6">
+                <input type="text" class="form-control"
+                       placeholder="Фильмы, сериалы, персоны">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-10 main-block shadow">
+
+            <div class="row movie-card">
+                <div class="col-md-4">
+                    <img src="3.jpg" class="img-fluid poster1">
+                </div>
+                <div class="col-md-8">
+                    <h2 class="movieName1">Название 1</h2>
+                    <p><strong>О фильме</strong></p>
+                    <p class="description1"></p>
+                    <a href="#" target="_blank"
+                       class="trailer-link link1">
+                       Посмотреть трейлер
+                    </a>
+                </div>
+            </div>
+
+            <div class="row movie-card">
+                <div class="col-md-4">
+                    <img src="3.jpg" class="img-fluid poster2">
+                </div>
+                <div class="col-md-8">
+                    <h2 class="movieName2">Название 2</h2>
+                    <p><strong>О фильме</strong></p>
+                    <p class="description2"></p>
+                    <a href="#" target="_blank"
+                       class="trailer-link link2">
+                       Посмотреть трейлер
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+
+
+    document.querySelector('.movieName1').textContent = "Довод";
+
+    document.querySelector('.description1').textContent =
+        "После теракта в киевском оперном театре агент ЦРУ объединяется с британской разведкой. Чтобы предотвратить Третью мировую войну, им предстоит освоить технологию управления временем.";
+
+    document.querySelector('.poster1').src = "2.png";
+
+    document.querySelector('.link1').href =
+        "https://www.youtube.com/watch?v=LdOM0x0XDMo";
+
+
+
+    document.querySelector('.movieName2').textContent = "Джокер";
+
+    document.querySelector('.description2').textContent =
+        "Готэм, 1980-е годы. Комик Артур Флек живёт с больной матерью и мечтает стать стендап-артистом. Постепенно он сталкивается с жестокостью общества и превращается в Джокера.";
+
+    document.querySelector('.poster2').src = "3.jpg";
+
+    document.querySelector('.link2').href =
+        "https://www.youtube.com/watch?v=zAGVQLHvwOY";
+
+</script>
+
+</body>
+</html>
